@@ -29,7 +29,7 @@ python3 scripts/hongguo.py download <series_id> --start 1 --end 5   # 只下区�
 ```
 
 脚本会创建下载任务并轮询到完成，最后校验目录里的 mp4 数量与总大小，打印保存位置。
-文件为 1080p HEVC MP4（`第N集.mp4`），保存在 hongguo-web 检出目录的 `download/<剧名>/` 下。
+文件为 1080p HEVC MP4（`第N集.mp4`），保存在 `/Volumes/Context/漫剧下载/<剧名>/` 下（由 hongguo-web 检出目录 `server/config/config.json` 的 `runtime.download.dir` 持久指定；临时覆盖用环境变量 `HONGGUO_DOWNLOAD_DIR`）。
 
 中断接管：`python3 scripts/hongguo.py status <task_id>`（download 启动时会打印 task_id）。
 
