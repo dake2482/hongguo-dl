@@ -33,7 +33,7 @@ python3 scripts/hongguo.py status dl_xxxxxxxx_1          # 接管进行中的任
 python3 scripts/hongguo.py stop                          # 停止本地服务
 ```
 
-下载结果：1080p HEVC MP4（`第N集.mp4`）。保存位置由 hongguo-web 检出目录 `server/config/config.json` 的 `runtime.download.dir` 决定（默认其 `download/<剧名>/`；本机示例配置为 `/Volumes/Context/漫剧下载/<剧名>/`），环境变量 `HONGGUO_DOWNLOAD_DIR` 可临时覆盖。
+下载结果：1080p HEVC MP4（`第N集.mp4`）。保存位置由 hongguo-web 检出目录 `server/config/config.json` 的 `runtime.download.dir` 决定（默认其 `download/<剧名>/`，可在该文件里配置本机自定义路径），环境变量 `HONGGUO_DOWNLOAD_DIR` 可临时覆盖。
 
 ## 工作流（AI 视角）
 
